@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20161108110747) do
     t.string   "deadline"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean  "done"
   end
 
 end
