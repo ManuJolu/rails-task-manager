@@ -1,0 +1,8 @@
+<h1>Welcome to your todo list !</h1>
+<p>Here are all the tasks</p>
+<% @tasks.each do |task| %>
+  <p><%= task.done ? '☑' : '☐' %><%= link_to task.name, task_path(task.id) %> due to <%= task.deadline %></p>
+  <hr>
+<% end %>
+<%= link_to 'Create a new task', new_task_path %>
+
